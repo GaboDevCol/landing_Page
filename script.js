@@ -23,24 +23,31 @@ $(document).ready(function () {
   });
 });
 
-let btn = document.getElementById("toggle-dark-mode");
+let btn = document.getElementById("darkMode");
 
-btn.addEventListener('click', ()=>{
-  //cambios en el contenedor
+ //cambios en el contenedor
  let container = document.getElementsByClassName('container');
-container.forEach(elemento => {
-  elemento.style.boxShadow = "0 0 5px green inset, 0 0 10px green, 0 0 20px green";
-  elemento.color = "lightgreen";
-});
+
+for(let i = 0; i < container.length; i++){
+  container[i].style.boxShadow = "0 0 5px lightgreen inset, 0 0 10px lightgreen, 0 0 20px lightgreen";
+  container[i].style.color = "green";
+  container[i].style.borderRadius = "10px";
+  container[i].style.border ="solid 1.5px green"
+};
 
   //Cambiosen la clase product
-  let product = document.querySelectorAll(.'product');
-  product.forEach(producto =>{
-    producto.style.boxShadow = "0 0 7px green inset, 0 0 15px green, 0 0 25px green";
-  });
+  let product = document.getElementsByClassName('product');
+  for( let j = 0; j < product.length; j++){
+    product[j].style.boxShadow = "0 0 5px lightgreen inset, 0 0 10px lightgreen, 0 0 20px lightgreen";
+    product[j].style.color = "green";
+    product[j].style.borderRadius = "10px"
+    product[j].style.border ="solid 1.5px green"
+  };
+
    //Cambios en el cuerpo
   document.getElementById('body').style.background = "Black";
-})
+}); 
+
 
 
 
