@@ -23,4 +23,16 @@ $(document).ready(function () {
   });
 });
 
+let btn= document.getElementById("toggle-dark-mode");
+btn.addEventListener('click', ()=>{
+  document.getElementsByClassName('')
+})
+
+
+
+
+
+
+
+
 
