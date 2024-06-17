@@ -24,8 +24,13 @@ $(document).ready(function () {
 });
 
 let btn= document.getElementById("toggle-dark-mode");
+
 btn.addEventListener('click', ()=>{
-  document.getElementsByClassName('')
+ let container = document.getElementsByClassName('container');
+container.forEach(elemento => {
+  elemento.style.boxShadow = "0 0 5px green inset, 0 0 10px green, 0 0 20px green";
+  elemento.color = "lightgreen";
+}
 })
 
 
