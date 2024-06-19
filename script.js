@@ -24,24 +24,28 @@ $(document).ready(function () {
 });
 
 let btn = document.getElementById("darkMode");
+btn.addEventListener('click', ()=>{
 
  //cambios en el contenedor
  let container = document.getElementsByClassName('container');
 
 for(let i = 0; i < container.length; i++){
-  container[i].style.boxShadow = "0 0 5px lightgreen inset, 0 0 10px lightgreen, 0 0 20px lightgreen";
-  container[i].style.color = "green";
+  container[i].style.boxShadow = "0 0 5px yellow inset, 0 0 10px yellow, 0 0 15px yellow";
+  container[i].style.textShadow ="0 0 5px yellow inset, 0 0 10px yellow, 0 0 15px yellow";
+  container[i].style.color = "#ff00ff";
   container[i].style.borderRadius = "10px";
-  container[i].style.border ="solid 1.5px green"
+  container[i].style.border ="solid 1.5px yellow"
+  container[i].style.background ="transparent"
 };
 
-  //Cambiosen la clase product
-  let product = document.getElementsByClassName('product');
-  for( let j = 0; j < product.length; j++){
-    product[j].style.boxShadow = "0 0 5px lightgreen inset, 0 0 10px lightgreen, 0 0 20px lightgreen";
-    product[j].style.color = "green";
-    product[j].style.borderRadius = "10px"
-    product[j].style.border ="solid 1.5px green";
+  //Cambios en la clase product
+  let producto = document.getElementsByClassName('product');
+  for( let j = 0; j < producto.length; j++){
+    producto[j].style.boxShadow = "0 0 5px #ff00ff inset, 0 0 10px #ff00ff, 0 0 15px #ff00ff";
+    producto[j].style.textShadow ="0 0 5px #ff00ff inset, 0 0 10px #ff00ff, 0 0 15px #ff00ff";
+    producto[j].style.color = "#ff00ff";
+    producto[j].style.borderRadius = "10px";
+    producto[j].style.border ="solid 1.5px #ff00ff";
   };
 
    //Cambios en el cuerpo
@@ -50,21 +54,28 @@ for(let i = 0; i < container.length; i++){
 //cambio en los botones
 let botones = document.getElementsByClassName('buy-button');
   for( let k = 0; k < product.length; k++){
-    product[k].style.boxShadow = "0 0 5px lightgreen inset, 0 0 10px lightgreen, 0 0 20px lightgreen";
-    product[k].style.color = "green";
-    product[k].style.borderRadius = "10px"
-    product[k].style.border ="solid 1.5px green"
-    product[k].style.background ="transparent"
+    botones[k].style.boxShadow = "0 0 5px yellow inset, 0 0 10px yellow, 0 0 15px yellow";
+    botones[k].style.color = "yellow";
+    botones[k].style.borderRadius = "10px"
+    botones[k].style.border ="solid 1.5px yellow"
+    botones[k].style.background ="transparent"
   };
 
 //cambios en el botòn producto
-let pro = document.getElementById('pro');
-  pro.style.boxShadow = "0 0 5px lightgreen inset, 0 0 10px lightgreen, 0 0 20px lightgreen";
+let pro = document.getElementById('darkMode');
+  pro.style.boxShadow = "0 0 5px yellow inset, 0 0 10px yellow, 0 0 15px yellow";
   pro.style.color = "green";
   pro.style.borderRadius = "10px";
-  pro.style.border ="solid 1.5px green";
+  pro.style.border ="solid 1.5px yellow";
   pro.style.background ="transparent";
+;
 
+/*let conta = document.getElementById('contacto');
+  conta.style.boxShadow = "0 0 5px yellow inset, 0 0 10px yellow, 0 0 20px yellow";
+  conta.style.color = "green";
+  conta.style.borderRadius = "10px";
+  conta.style.border ="solid 1.5px yellow";
+  conta.style.background ="black";*/
 }); 
 
 
